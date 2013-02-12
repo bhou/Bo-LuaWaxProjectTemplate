@@ -5,7 +5,7 @@ Bo-LuaWaxProjectTemplate is a xcode project template and tools for iOS developme
 
 Installation
 ------------------------
-You need to have **waxsim** and **lua** installed before using this template
+You need to have [**waxsim**](https://github.com/square/waxsim) and [**lua**](http://lua.org) installed before using this template
 
 unzip the downloaded zip file to any where you like
 
