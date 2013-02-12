@@ -21,11 +21,11 @@ cd <Bo-LuaWaxProjectTemplate root>
 `````
 
 ### Run the newly create project
-you can open the project in xcode to build and run it as a normal xcode iOS app project
+- you can open the project in xcode to build and run it as a normal xcode iOS app project
 
 or 
 
-you can change your directory to the newly create project, and run **./build.sh**
+- you can change your directory to the newly create project, and run **./build.sh**
 
 `````sh
 cd <path of the newly created project>
