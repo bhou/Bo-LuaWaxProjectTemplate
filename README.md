@@ -20,7 +20,7 @@ cd <Bo-LuaWaxProjectTemplate root>
 ./createprj.sh <path of your project>
 `````
 
-### Run the newly create project
+### Run the newly created project
 - you can open the project in xcode to build and run it as a normal xcode iOS app project
 
 or 
