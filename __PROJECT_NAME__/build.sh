@@ -6,7 +6,6 @@ set -e
 echo $PWD
 
 APPNAME=__PROJECT_NAME__
-#PROJROOT=/Users/bohou/Developments/wax/$APPNAME
 PROJROOT=$PWD
 DSTROOT="$PWD"/build
 
