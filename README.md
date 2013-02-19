@@ -11,12 +11,16 @@ unzip the downloaded zip file to any where you like
 
 Usage
 ------------------------
+First you need to compile two version of **Lua**: one for the usage in mac os x, another one for working on iphone
+`````sh
+cd <Bo-LuaWaxProjectTemplate root>
+./buildlua.sh
+`````
+
+### Create a project
 In terminal, change your directory to this project root
 `````sh
 cd <Bo-LuaWaxProjectTemplate root>
-`````
-### Create a project
-`````sh
 ./createprj.sh <path of your project>
 `````
 
