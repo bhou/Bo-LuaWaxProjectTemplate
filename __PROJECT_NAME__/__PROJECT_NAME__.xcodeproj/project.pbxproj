@@ -849,6 +849,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				WAX_COMPILE_SCRIPTS = false;
 			};
 			name = Debug;
 		};
@@ -874,6 +875,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WAX_COMPILE_SCRIPTS = false;
 			};
 			name = Release;
 		};

@@ -29,7 +29,8 @@ echo Finished creating project structure
 echo Create project $PROJ_NAME to $PROJ_PATH
 
 #silent mode
-lua ./bin/replace.lua $PROJ_PATH/ $TEMPLATE_NAME $PROJ_NAME
+pwd
+./bin/lua ./bin/replace.lua $PROJ_PATH/ $TEMPLATE_NAME $PROJ_NAME
 
 #show log
 #lua ./bin/replace.lua -l $PROJ_PATH/ $TEMPLATE_NAME $PROJ_NAME

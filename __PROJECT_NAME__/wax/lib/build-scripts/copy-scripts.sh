@@ -30,13 +30,13 @@ mkdir -p "$SOURCE_SCRIPTS_DIR"
 rm -rf "$DESTINATION_SCRIPTS_DIR"
 mkdir -p "$DESTINATION_SCRIPTS_DIR"
 
-if [ $WAX_COMPILE_SCRIPTS ]; then
+if [ $WAX_COMPILE_SCRIPTS = "true" ]; then
   echo "note: Wax is using compiled Lua scripts."
   # This requires that you run a special build of lua. Since snow leopard is 64-bit
   # and iOS is 32-bit, luac files compiled on snow leopard won't work on iOS
 
-  lua "$PROJECT_DIR/wax/lib/build-scripts/luac.lua" wax wax.dat "$PROJECT_DIR/wax/lib/stdlib/" "$PROJECT_DIR/wax/lib/stdlib/init.lua" -L "$PROJECT_DIR/wax/lib/stdlib"/**/*.lua
-  lua "$PROJECT_DIR/wax/lib/build-scripts/luac.lua" "" AppDelegate.dat "$SOURCE_SCRIPTS_DIR/" "$SOURCE_SCRIPTS_DIR/AppDelegate.lua" -L "$SOURCE_SCRIPTS_DIR"/**/*.lua
+  $PROJECT_DIR/wax/bin/lua "$PROJECT_DIR/wax/lib/build-scripts/luac.lua" wax wax.dat "$PROJECT_DIR/wax/lib/stdlib/" "$PROJECT_DIR/wax/lib/stdlib/init.lua" -L "$PROJECT_DIR/wax/lib/stdlib"/**/*.lua
+  $PROJECT_DIR/wax/bin/lua "$PROJECT_DIR/wax/lib/build-scripts/luac.lua" "" AppDelegate.dat "$SOURCE_SCRIPTS_DIR/" "$SOURCE_SCRIPTS_DIR/AppDelegate.lua" -L "$SOURCE_SCRIPTS_DIR"/**/*.lua
   mv AppDelegate.dat "$DESTINATION_SCRIPTS_DIR"
   mv wax.dat "$DESTINATION_SCRIPTS_DIR"
 else
