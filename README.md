@@ -45,3 +45,6 @@ you need to put your lua code under the *scripts* directory
 by default, wax will copy all your lua source code to the application. To use the byte code in the application,
 you need to open the project in xcode and modify the user setting WAX_COMPILE_SCRIPTS from **false** to **true**
 
+
+### TODO
+- LuaJIT support
