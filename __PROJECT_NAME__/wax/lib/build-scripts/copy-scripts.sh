@@ -39,6 +39,9 @@ if [ $WAX_COMPILE_SCRIPTS = "true" ]; then
   $PROJECT_DIR/wax/bin/lua "$PROJECT_DIR/wax/lib/build-scripts/luac.lua" "" AppDelegate.dat "$SOURCE_SCRIPTS_DIR/" "$SOURCE_SCRIPTS_DIR/AppDelegate.lua" -L "$SOURCE_SCRIPTS_DIR"/**/*.lua
   mv AppDelegate.dat "$DESTINATION_SCRIPTS_DIR"
   mv wax.dat "$DESTINATION_SCRIPTS_DIR"
+
+  cp -r "$SOURCE_SCRIPTS_DIR/locale" "$DESTINATION_SCRIPTS_DIR"
+  cp -r "$SOURCE_SCRIPTS_DIR/resource" "$DESTINATION_SCRIPTS_DIR"
 else
   # copy everything in the data dir to the app (doesn't just have to be lua files, can be images, sounds, etc...)
   if [[ -d "$PROJECT_DIR/wax" ]]; then;
